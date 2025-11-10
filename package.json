@@ -1,0 +1,21 @@
+{
+  "name": "photoshop-ws-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Universal Photoshop UXP WebSocket agent for remote automation",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "clean": "rimraf dist index.js"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "rimraf": "^6.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}

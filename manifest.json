@@ -1,0 +1,21 @@
+{
+  "manifestVersion": 5,
+  "id": "com.blueberry.photoshopwsagent",
+  "name": "Photoshop WS Agent",
+  "version": "0.1.0",
+  "host": { "app": "PS", "minVersion": "23.0.0" },
+  "entrypoints": [
+    {
+      "type": "command",
+      "id": "connect",
+      "label": "Connect to WS Bridge",
+      "command": "connect",
+      "scriptPath": "main.js"
+    }
+  ],
+  "requiredPermissions": {
+    "network": {
+      "domains": ["localhost", "localhost:3000", "google.com", "www.google.com"]
+    }
+  }
+}
